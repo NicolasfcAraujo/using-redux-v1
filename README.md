@@ -10,4 +10,4 @@ links for repositories:
   👉 using-redux-v1: https://github.com/NicolasfcAraujo/using-redux-v1
   
 link for webpage:
-  💻 Using Redux: https://using-redux.netlify.app
+  💻 Using Redux: https://using-redux-v1.netlify.app
