@@ -1,0 +1,7 @@
+POST https://my-posts-api-v1.onrender.com/api/posts
+Content-Type: application/json
+
+{
+    "title": "title2",
+    "content": "text2"
+}

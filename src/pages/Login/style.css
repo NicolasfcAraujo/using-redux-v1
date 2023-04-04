@@ -1,0 +1,5 @@
+#backImage {
+    background-image: linear-gradient(235deg, #a702ff 0, #6e0dff 25%, #0010ff 50%, #0011e2 75%, #0013c6 100%);
+    background-clip: text;
+    color: transparent;
+}
