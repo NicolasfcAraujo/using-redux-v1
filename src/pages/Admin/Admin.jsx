@@ -67,14 +67,16 @@ const Admin = () => {
                                     <div className="rounded p-2 my-6 border border-solid border-slate-500">
                                         <div className="flex justify-between">
                                             <h4>{post.title}</h4>
-                                            <div className="flex">
-                                                <button className="mr-2" onClick={() => dispatch(turnOnEditing(post))}>
-                                                    <i className="fa-solid fa-pen-to-square"></i>
-                                                </button>
-                                                <button onClick={() => dispatch(itemDelete(post))}>
-                                                    <i className="fa-solid fa-trash"></i>
-                                                </button>
-                                            </div>
+                                            {(post._id !== "642c403db7ccf4651e3a7bb2") && 
+                                                <div className="flex">
+                                                    <button className="mr-2" onClick={() => dispatch(turnOnEditing(post))}>
+                                                        <i className="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                    <button onClick={() => dispatch(itemDelete(post))}>
+                                                        <i className="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            }
                                         </div>
                                         <p>
                                             {post.content}
