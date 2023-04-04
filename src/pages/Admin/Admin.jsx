@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import useAxios from "../../hooks/useAxios"
 import { formSubmit, itemDelete, itemUpdate, selectForm, setContent, setTitle, turnOffEditing, turnOnEditing } from "../../redux/features/formSlice"
 import { useEffect } from "react"
+import "./style.css"
 
 const url = "https://my-posts-api-v1.onrender.com/api/posts"
 
@@ -18,7 +19,7 @@ const Admin = () => {
     }, [])
 
     return (
-        <section className="flex justify-center bg-slate-100">
+        <section id="sectionPost" className="flex justify-center bg-slate-100">
             <div className=" w-5/6 bg-white flex flex-col items-center">
                 <div className="px-4 py-2 w-full">
                     <h1 className="text-2xl">Admin</h1>

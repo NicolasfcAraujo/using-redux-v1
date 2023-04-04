@@ -10,7 +10,7 @@ const Feed = () => {
   })
 
   return (
-    <section className="flex justify-center bg-slate-50">
+    <section id="sectionPost" className="flex justify-center bg-slate-50">
         <div className=" w-5/6 bg-white flex flex-col items-center">
             <div className="px-4 py-2 w-full">
               <h1 className="text-2xl">Posts</h1>

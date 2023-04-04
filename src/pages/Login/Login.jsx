@@ -64,7 +64,7 @@ const Login = () => {
                         <h1 id="backImage" className="text-8xl">USING REDUX</h1>
                         <h5 className="text-3xl text-slate-700">, React Router and Axios</h5>
                     </div>
-                    <section className="flex justify-center" style={{width: isShortWidth || "50%", alignItems: isShortWidth || "center", marginTop: isShortWidth && "100px", height: isShortWidth && "fit"}}>
+                    <section className="flex justify-center" style={{width: isShortWidth || "50%", alignItems: isShortWidth || "center", marginTop: isShortWidth && "100px", height: isShortWidth || "fit"}}>
                         <div className="border border-solid border-slate-400 rounded-md bg-white p-6 w-72">
                             <h3>Login</h3>
                             <div className="py-6">
