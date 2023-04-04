@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from "react-redux"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { selectUser } from "../../redux/features/userSlice"
 import { closeLogout, selectLogout, setCoordinates } from "../../redux/features/logoutSlice"
 import LogoutModal from "../LogoutModal/LogoutModal"
+import "./style.css"
 
 const Navbar = () => {
     const {name, isAdmin} = useSelector(selectUser)
@@ -11,8 +12,10 @@ const Navbar = () => {
 
     return (
         <div className="flex items-center px-4 py-4">
-            <div id="backImage" className="w-1/3">
-                <h1 className=" text-4xl">Using Redux</h1>
+            <div className="w-1/3">
+                <Link to="/home/posts">
+                    <h1 id="backImage" className=" w-fit text-4xl">Using Redux</h1>
+                </Link>
             </div>
             <nav className="w-1/3">
                 <ul style={{display: "grid", gridTemplateColumns: isAdmin ? "repeat(3, 1fr)":"repeat(2, 1fr)",
