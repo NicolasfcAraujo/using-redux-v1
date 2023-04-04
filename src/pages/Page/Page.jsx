@@ -5,7 +5,6 @@ import { selectUser } from "../../redux/features/userSlice"
 
 const Page = () => {
     const { name } = useSelector(selectUser)
-    const dispatch = useDispatch()
     const navigate = useNavigate()
 
     useEffect(() => {
