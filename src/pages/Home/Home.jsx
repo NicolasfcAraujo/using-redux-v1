@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    if (window.location.href === "http://localhost:5173/home/" || window.location.href === "http://localhost:5173/home"){
+    if (window.location.href === "https://using-redux-v1.netlify.app/home/" || window.location.href === "https://using-redux-v1.netlify.app/home"){
       navigate("/home/posts")
     }
   })

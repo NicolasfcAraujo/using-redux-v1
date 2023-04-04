@@ -9,9 +9,9 @@ const Page = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        if ((window.location.href === "http://localhost:5173/" && name) || (window.location.href === "http://localhost:5173" && name)) {
+        if ((window.location.href === "http://using-redux.netlify.app/" && name) || (window.location.href === "http://using-redux.netlify.app" && name)) {
             navigate("/home/posts")
-        } else if ((window.location.href === "http://localhost:5173/" && !name) || (window.location.href === "http://localhost:5173" && !name)) {
+        } else if ((window.location.href === "http://using-redux.netlify.app/" && !name) || (window.location.href === "http://using-redux.netlify.app" && !name)) {
             navigate("/login")
         }
     })
